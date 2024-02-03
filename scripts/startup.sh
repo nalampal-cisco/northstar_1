@@ -1,2 +1,0 @@
-cd streamlit_langchain_pyats
-streamlit run chat_with_routing_table.py
