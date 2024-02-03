@@ -1,0 +1,12 @@
+version: '3'
+ 
+services:
+  streamlit_langchain_pyats:
+    image: johncapobianco/streamlit_langchain_pyats:streamlit_langchain_pyats
+    container_name: streamlit_langchain_pyats
+    restart: always     
+    build: 
+      context: ./
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "8501:8501"
